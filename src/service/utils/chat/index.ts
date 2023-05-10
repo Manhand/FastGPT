@@ -140,7 +140,7 @@ export const resStreamResponse = async ({
 }) => {
   // 创建响应流
   res.setHeader('Content-Type', 'text/event-stream;charset-utf-8');
-  res.setHeader('Access-Control-Allow-Origin', '*');
+  // res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('X-Accel-Buffering', 'no');
   res.setHeader('Cache-Control', 'no-cache, no-transform');
   systemPrompt && res.setHeader(SYSTEM_PROMPT_HEADER, encodeURIComponent(systemPrompt));
